@@ -51815,6 +51815,8 @@ module.exports = function(module) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _components_Dashboard_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Dashboard.vue */ "./resources/js/components/Dashboard.vue");
+/* harmony import */ var _components_Profile_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Profile.vue */ "./resources/js/components/Profile.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -51825,16 +51827,20 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+
 var routes = [{
   path: '/dashboard',
-  component: __webpack_require__(/*! ./components/Dashboard.vue */ "./resources/js/components/Dashboard.vue")
+  component: _components_Dashboard_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
 }, {
   path: '/profile',
-  component: __webpack_require__(/*! ./components/Profile.vue */ "./resources/js/components/Profile.vue")
+  component: _components_Profile_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
-  routes: routes // short for `routes: routes`
-
+  hashbang: false,
+  history: true,
+  mode: 'history',
+  routes: routes
 });
 /**
  * The following block of code may be used to automatically register your
@@ -52145,8 +52151,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\laravel_elshimy_test\project 5.7\larastart\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\laravel_elshimy_test\project 5.7\larastart\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/muhammad/PhpstormProjects/larastart-git/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/muhammad/PhpstormProjects/larastart-git/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
