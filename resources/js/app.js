@@ -13,14 +13,21 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 
+import Dashboard from './components/Dashboard.vue';
+import Profile from './components/Profile.vue';
+
+
 let routes = [
-    { path: '/dashboard', component: require('./components/Dashboard.vue') },
-    { path: '/profile', component: require('./components/Profile.vue') }
-  ]
+    { path: '/dashboard', component: Dashboard},
+    { path: '/profile', component: Profile }
+];
 
 const router = new VueRouter({
-routes // short for `routes: routes`
-})
+    hashbang: false,
+    history: true,
+    mode: 'history',
+    routes
+});
 
 
 /**
